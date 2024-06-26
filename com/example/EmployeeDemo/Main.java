@@ -7,13 +7,14 @@ public class Main {
         Salesperson employeeTwo = new Salesperson("Matt Johnson", 65000, 32, .25);
 
         employeeOne.getAnnualBonus();
-        employeeOne.getAnnualBonus();
         employeeTwo.raiseSalary();
         employeeTwo.getCommissionPercentage();
+        employeeTwo.raiseCommission(); // Call the raiseCommission method
 
-        System.out.println(employeeOne.salary);
-        System.out.println(employeeOne.getAnnualBonus());
-        System.out.println(employeeTwo.salary);
-        System.out.println(employeeTwo.getCommissionPercentage());
+        System.out.println("Employee One Salary: " + employeeOne.salary);
+        System.out.println("Employee One Annual Bonus: " + employeeOne.getAnnualBonus());
+        System.out.println("Employee Two Salary: " + employeeTwo.salary);
+        System.out.println("Employee Two Commission Percentage: " + employeeTwo.getCommissionPercentage());
+
     }
 }
